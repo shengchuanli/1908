@@ -32,6 +32,7 @@ class AddressController extends Controller
     }
     public function address_do(){
         echo 123;
+        echo "ok";
         $data=request()->except('_token');
         dd($data);
     }
