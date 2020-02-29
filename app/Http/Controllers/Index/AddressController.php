@@ -31,6 +31,7 @@ class AddressController extends Controller
         return view('address.add_address',['areainfo'=>$areainfo]);
     }
     public function address_do(){
+        echo 123;
         $data=request()->except('_token');
         dd($data);
     }
